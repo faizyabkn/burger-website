@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="Assets/Favvv.avif" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="hover-min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
       rel="stylesheet"
@@ -250,12 +251,11 @@
 
       <nav class="navbar-menu">
         <ul class="menu-listing">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Orders</a></li>
-          <li><a href="#">Track</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
+          <li><a href="#orderNow" target="_parent"><i class="fa-solid fa-utensils" style="color: #ffffff;"></i></a></li>
+          <li><a href="#discover" target="_parent"><i class="fa-solid fa-globe" style="color: #ffffff;"></i></a></li>
+          <li><a href="#About" target="_parent"><i class="fa-solid fa-burger" style="color: #ffffff;"></i></a></li>
+          <li><a href="#Reservation" target="_parent"><i class="fa-regular fa-clock" style="color: #ffffff;"></i></a></li>
         </ul>
       </nav>
     <!-- </div> -->
@@ -311,24 +311,9 @@
     </div>
 
     
-    <!-- Extra PART -->
-
-    <div class="md:w-[80%] w-[90%] mx-auto mb-8 pt-8 md:grid-cols-10 grid gap-2">
-      <div class="order-2 lg:p-5 lg:flex lg:flex-col lg:justify-center md:col-span-5 pt-7 md:order-1">
-        <h2 class="md:text-2xl text-xl font-bold uppercase text-[#3d2514] tracking-widest">The Ultimate Burger Experience</h2>
-        <p class="lg:text-base md:text-[16px] mt-2"> Discover the mouthwatering world of the top burger! Featuring a perfectly grilled patty, fresh toppings, and artisanal buns, this burger is a symphony of flavors and textures. Whether you prefer classic cheeseburgers or gourmet creations with unique ingredients, each bite promises satisfaction. Join us as we explore the best burger joints, innovative recipes, and the passion behind crafting the perfect burger. Get ready to indulge in a culinary delight that brings people together!
-          
-        </p>
-      </div>
-      <div class="flex items-center order-1 md:col-span-5 md:order-2">
-        <img class="mx-auto md:w-[90%] sm:w-[75%] w-[80%]" src="Assets/Fav.png" alt="">
-      </div>
-    </div>
-
-
 
     <!-- 3rd PART -->
-    <div class="pb-12 mt-6 w-[95%] mx-auto">
+    <div class="pb-12 mt-6 w-[95%] mx-auto" id="orderNow">
       <div class="pt-3 text-center">
         <h3
           class="inline-block bg-[#ffc045] text-xl px-2 mb-2 mt-2 text-[#3d2514]"
@@ -365,7 +350,7 @@
               </p>
             </div>
             <button
-              class="mt-3 text-xl bold bg-[#bf2222] w-[130px] px-2 pt-1 mx-auto text-white"
+              class="hvr-sweep-to-left mt-3 text-xl bold bg-[#bf2222] w-[130px] px-2 pt-1 mx-auto text-white"
             >
               Order Now
             </button>
@@ -388,7 +373,7 @@
               </p>
             </div>
             <button
-              class="mt-3 text-xl bold bg-[#bf2222] w-[130px] px-2 pt-1 mx-auto text-white"
+              class="hvr-sweep-to-left mt-3 text-xl bold bg-[#bf2222] w-[130px] px-2 pt-1 mx-auto text-white"
             >
               Order Now
             </button>
@@ -412,7 +397,7 @@
               </p>
             </div>
             <button
-              class="mt-3 text-xl bold bg-[#bf2222] w-[130px] px-2 pt-1 mx-auto text-white"
+              class="hvr-sweep-to-left mt-3 text-xl bold bg-[#bf2222] w-[130px] px-2 pt-1 mx-auto text-white"
             >
               Order Now
             </button>
@@ -422,7 +407,7 @@
     </div>
 
     <!-- 4rth PART -->
-    <div class="pb-12 mt-12">
+    <div class="pb-12 mt-12 " id="discover">
       <div class="w-[80%] mx-auto grid md:grid-cols-10 p-3 gap-2 part4rth">
         <div class="md:col-span-5">
           <p class="text-xl font-bold para text-[#3d2514]">DISCOVER</p>
@@ -442,11 +427,24 @@
         </div>
       </div>
     </div>
+<!-- Extra PART -->
+
+<div class="md:w-[80%] w-[90%] mx-auto mb-8 pt-8 md:grid-cols-10 grid gap-2" id="About">
+  <div class="order-2 lg:p-5 lg:flex lg:flex-col lg:justify-center md:col-span-5 pt-7 md:order-1">
+    <h2 class="md:text-2xl text-xl font-bold uppercase text-[#3d2514] tracking-widest">Savor the Flavor at Burger House</h2>
+    <p class="lg:text-base md:text-[16px] mt-2"> Welcome to Burger House, where we serve up mouthwatering burgers crafted from the finest ingredients! Our passion for flavor and quality shines through in every bite, from our juicy patties to our freshly baked buns and signature sauces. Whether you’re craving a classic cheeseburger or one of our creative specialty options, there’s something to satisfy every palate. Join us for a casual dining experience filled with deliciousness and a friendly atmosphere. At Burger House, we’re not just making burgers—we’re creating moments worth savoring
+      
+    </p>
+  </div>
+  <div class="flex items-center order-1 md:col-span-5 md:order-2">
+    <img class="mx-auto md:w-[90%] sm:w-[75%] w-[80%]" src="Assets/Fav.png" alt="">
+  </div>
+</div>
 
 
 
     <!-- 5th PART -->
-    <div class="grid grid-cols-12 w-[90%] md:w-full mx-auto mb-14">
+    <div class="grid grid-cols-12 w-[90%] md:w-full mx-auto mb-14" id="Reservation">
       <div class="hidden col-span-3 md:block">
         <img class="w-[50%]" src="Assets/img-left-a.png" alt="" />
         <div class="bottlediv">
@@ -514,7 +512,7 @@
               />
             </div>
             <div class="col-span-6">
-              <button class="fbtn" type="submit">RESERVE NOW</button>
+              <button class="fbtn hvr-sweep-to-left" type="submit">RESERVE NOW</button>
             </div>
           </div>
         </form>
@@ -529,7 +527,7 @@
       <img class=" md:w-[25%] sm:w-[40%] w-[50%]" src="Assets/lg.png" alt="">
       <div class="flex flex-col">
       <p class="inline-block ml-4 text-base text-white sm:ml-6 "><i class="mr-2 text-[20px] fa-solid fa-envelope" style="color: #ffffff;"></i>burgerhouse@info.com</p>
-      <p class="inline-block mt-2 ml-4 text-base text-white sm:ml-6 "><i class="mr-3 text-[20px] fa-solid fa-location-dot" style="color: #ffffff;"></i>Sheikh Maltoon Town, Mardan</p>
+      <p class="inline-block mt-2 ml-4 text-base text-white sm:ml-6 "><i class="ml-[2px] mr-3 text-[20px] fa-solid fa-location-dot" style="color: #ffffff;"></i>Sheikh Maltoon Town, Mardan</p>
       </div>
       <div class="mt-5 ml-6">
         <i class="mr-2 fa-brands fa-facebook hover:bg-[#ffc657]  hover:rounded-[50%] text-[20px] p-2" style="color: #ffffff;"></i>
